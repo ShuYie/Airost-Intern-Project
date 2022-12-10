@@ -1,0 +1,217 @@
+.topnav {
+    background-color: white;
+    overflow: hidden;
+    width:100%;
+    font-family: Arial;
+  }
+  
+  .topnav a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(115, 113, 113);
+    color: white;
+  }
+  
+  .topnav a.active {
+    background-color: #ba0d0d;
+    color: white;
+    font-family: Arial;
+  }
+  
+  .homepage{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .Title{
+    display:block;
+    text-align:center;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: Lucida;
+    letter-spacing: -2px;
+    transition: 700ms ease;
+    color: PaleGoldenRod;
+    outline: none;
+  }
+  
+  .Title:hover {
+    letter-spacing: 1px;
+  }
+  
+  .Explaination{
+    display:block;
+    text-align:center;
+    margin: 10px;
+    font-size: 25px;
+    line-height: 150%;
+    color: MintCream;
+    letter-spacing: .5px;
+  }
+  
+  .search_title{
+    display:block;
+    font-family: Arial;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:white;
+  }
+  
+  .instruction{
+    display:block;
+    font-family: Arial;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color:white;
+  }
+  
+  .note{
+    font-family: Arial;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+  }
+  .search_area{
+    display: block;
+    text-align: center;
+  }
+  
+  .current_location{
+    font-size: 25px;
+    color:white;
+  }
+  
+  .destination_area{
+    display: block;
+    text-align: center;
+    margin-bottom: 200px;
+  }
+  
+  .destination{
+    font-size: 25px;
+    color:white;
+  }
+  
+  .map{
+    width: 100%;
+  }
+  
+  .bus_map_image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .bus_map_text{
+    display: block;
+    width: 1fr;
+    font-family: Arial;
+    font-size: 20px;
+    color: white;
+    text-align:center;
+    margin-bottom: 100px;
+  
+  }
+  
+  *{box-sizing:border-box}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  label{
+      color:white;
+      text-shadow: 2px 2px #000000;
+  }

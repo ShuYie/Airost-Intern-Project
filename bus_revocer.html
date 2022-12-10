@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styling.css">
+  <title>UTM Shuttle Bus</title>
+  <style>
+    body {
+      background-image: url('../related_image/html background.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topnav">
+    <img src="../related_image/logo.png" alt="logo" width="100"; style="float: left; margin-right: 0px;">
+    <a class="active" href="#map_section">Bus Route Map</a>
+    <a href="#schedule_section">Bus Schedule</a>
+  </div>
+  
+  <div class="homepage">
+    <p class="Title">
+      UTM SHUTTLE BUS ROUTE PLANNING SYSTEM
+    </p>
+    <p class="Explaination">
+      This website is used for planning  your bus route in UTM Skudai
+    </p>
+  </div>
+  
+<div class="page1">
+    <p class="search_title">
+      UTM SHUTTLE BUS ROUTE PLANNING SYSTEM
+    </p>
+    <p class="instruction">
+      Select your location and destination
+    </p>
+    <p class="note">
+        *Please be noted that this part is used to check your bus on weekdays*
+    </p>
+    <div class="search_area">
+      <h3 class="current_location">Current Location</h3>
+       <form action="connect recover.php " method="get">
+        <label for="location"></label>
+                   
+          <select name="location" id="location">
+            <option value="KDOJ">KDOJ</option>
+                <option value="KLG">KLG</option>
+                <option value="KDSE">KDSE</option>
+                <option value="Orchard">UTM Orchard</option>
+                <option value="PKU">PKU</option>
+                <option value="KTF">KTF</option>
+                <option value="KRP">KRP</option>
+                <option value="A.M">Arked Meranti</option>
+                <option value="S.M">Student Mall</option>
+                <option value="L51">L51</option>
+                <option value="Cengal">Cengal</option>
+                <option value="KTR">KTR</option>
+                <option value="KTHO">KTHO</option>
+                <option value="KTDI">KTDI</option>
+                <option value="FKA">FKA</option>
+                <option value="N28">N28</option>
+                <option value="N24">N24</option>
+                <option value="Palapes">Palapes</option>
+                <option value="R.F">Recreational Forest</option>
+                <option value="B.P">Balai Cerap</option>
+                <option value="FKT">FKT (N01)</option>
+                <option value="P19">P19</option>
+                <option value="C24">C24</option>
+                <option value="D05">D05</option>
+                <option value="C07">C07</option>   
+                <option value="KP">KP</option>
+                <option value="UTM_i">UTM-i</option>
+                <option value="S.I">Scholar's Inn</option>
+                <option value="K9/K10">K9/K10</option>
+                <option value="A.L">Arked Lestari</option>
+                <option value="T02_T08">Cluster(T02-T08)</option>
+                <option value="KTC">KTC</option>
+                <option value="V01">V01</option>
+          </select>
+        
+         <div class="destination_area">
+          <h3 class="destination">Your Destination</h3>
+          <label for="destination"></label>
+               <select name="destination" id="destination">
+                    <option value="KDOJ">KDOJ</option>
+                        <option value="KLG">KLG</option>
+                        <option value="KDSE">KDSE</option>
+                        <option value="Orchard">UTM Orchard</option>
+                        <option value="PKU">PKU</option>
+                        <option value="KTF">KTF</option>
+                        <option value="KRP">KRP</option>
+                        <option value="A.M">Arked Meranti</option>
+                        <option value="S.M">Student Mall</option>
+                        <option value="L51">L51</option>
+                        <option value="Cengal">Cengal</option>
+                        <option value="KTR">KTR</option>
+                        <option value="KTHO">KTHO</option>
+                        <option value="KTDI">KTDI</option>
+                        <option value="FKA">FKA</option>
+                        <option value="N28">N28</option>
+                        <option value="N24">N24</option>
+                        <option value="Palapes">Palapes</option>
+                        <option value="R.F">Recreational Forest</option>
+                        <option value="B.P">Balai Cerap</option>
+                        <option value="FKT">FKT (N01)</option>
+                        <option value="P19">P19</option>
+                        <option value="C24">C24</option>
+                        <option value="D05">D05</option>
+                        <option value="C07">C07</option>   
+                        <option value="KP">KP</option>
+                        <option value="UTM_i">UTM-i</option>
+                        <option value="S.I">Scholar's Inn</option>
+                        <option value="K9/K10">K9/K10</option>
+                        <option value="A.L">Arked Lestari</option>
+                        <option value="T02_T08">Cluster(T02-T08)</option>
+                        <option value="KTC">KTC</option>
+                        <option value="V01">V01</option>
+             </select>
+             
+           <p><input type="submit" value="Submit"></p>
+        </form>
+      
+    </div>
+  </div>
+
+
+  <div class="map" id="map_section">
+    <img class= "bus_map_image" src="../related_image/bus_map.jpg" width="70%" >
+    <div class="bus_map_text">UTM SHUTTLE BUS MAP</div>
+
+  </div>
+
+    <!-- Slideshow container -->
+  <div class="slideshow-container" id="schedule_section">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 10</div>
+      <img src="../busschedule_image/1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 10</div>
+      <img src="../busschedule_image/2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 10</div>
+      <img src="../busschedule_image/3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 10</div>
+      <img src="../busschedule_image/4.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 10</div>
+      <img src="../busschedule_image/5.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 10</div>
+      <img src="../busschedule_image/6.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">7 / 10</div>
+      <img src="../busschedule_image/7.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">8 / 10</div>
+      <img src="../busschedule_image/8.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">9 / 10</div>
+      <img src="../busschedule_image/9.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">10 / 10</div>
+      <img src="../busschedule_image/10.jpg" style="width:100%">
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span>
+  </div>
+  
+  <script>
+      let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+  </script>
+</body>
+
+ 
+</html> 
